@@ -1,0 +1,13 @@
+
+<h2 class="title">Ultimos lanzamientos</h2>
+<div class="row">
+	<div class="col-md-2" *ngFor="let product of products">
+		<div class="card">
+			<img src="{{ product.image }}" alt="{{ product.name }}" width="80">
+			<div class="card__body">
+				<h3>{{ product.name }}</h3>
+				<p>{{ product.price | currency:'USD': 'symbol': '1.0-2' }}</p>
+			</div>
+		</div>
+	</div>
+</div>

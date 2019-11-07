@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 13px;
+	color: #433f48;
+	-webkit-font-smoothing: antialiased;
+}
+.navbar{
+	min-height: 80px;
+	padding: 0;
+	background-color: white;
+	
+	h4{
+		font-size: 32px;
+		font-weight: bold;
+		color: #433f48;
+
+		span{
+			color: #3db13d;
+		}
+	}
+}
+.menu{
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	
+	a{
+		font-size: 12px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+		padding: 12px 21px;
+		transition: all 0.3s;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: #3db13d;
+
+		&:hover{
+			background-color: #3ba93c;
+		}
+	}
+	.bg-active{
+		background-color: #596770;
+	}
+}
+.carousel{
+	height: 340px;
+    overflow: hidden;
+
+	.carousel-item{
+		height: 340px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.title{
+	font-size: 14px;
+    font-weight: 700;
+    color: #433f48;
+    margin-bottom: 34px;
+    padding-left: 14px;
+    text-transform: uppercase;
+    border-left: 5px solid #3db13d;
+}
+.card{
+	width: 100% !important;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: 0px solid transparent;
+	
+	img{
+		width: 100%;
+		border-top-left-radius: calc(.25rem - 1px);
+		border-top-right-radius: calc(.25rem - 1px);
+	}
+	.card__body{
+		padding: 14px 0 0;
+
+		h3{
+			font-size: 14px;
+			font-weight: 500;
+		}
+		p{
+			display: inline-block;
+			font-weight: 500;
+			color: white;
+			padding: 2px 14px;
+			margin: 4px 0 0;
+			border-radius: 2px;
+			background-color: #3db13d;
+		}
+	}
+}
